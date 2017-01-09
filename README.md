@@ -3,6 +3,7 @@
 ##How to deploy flyimg application to AWS Elastic Beanstalk
 
 In this article we'll see how to deploy flyimg application to AWS Cloud with Elastic Beanstalk.
+
 Please make sure that `eb cli` tool is installed.
 
 ## Instalation the project
@@ -21,8 +22,12 @@ CD into the folder flyimg and run eb init:
 eb init
 ```
 
-This will init your aws account, it'll ask you to Select a default region and provide your credentials (aws-access-id,aws-secret-key), after it'll ask about Application Name (default is folder name which is flyimg).
-After eb cli will detect the Dockerfile inside your folder, you'll get this quesiton `It appears you are using Docker. Is this correct?` enter yes and choose the default docker version which is the latest.
+This will init your aws account, it'll ask you to Select a default region and provide your credentials (aws-access-id,aws-secret-key).
+
+After it'll ask about Application Name (default is folder name which is flyimg).
+
+Next eb cli will detect the Dockerfile inside your folder, you'll get this quesiton `It appears you are using Docker. Is this correct?` enter yes and choose the default docker version which is the latest.
+
 Finally, eb cli ask you if you want to set up SSH for your instances, you can choose yes and create a new keypair.
 
 ## Creating the environment and deploying the application
