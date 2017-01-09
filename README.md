@@ -4,7 +4,7 @@
 
 In this article we'll see how to deploy flyimg application to AWS Cloud with Elastic Beanstalk.
 
-Please make sure that `eb cli` tool is installed.
+Please make sure that (`eb cli`)[http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-install.html] tool is installed.
 
 ## Instalation the project
 
